@@ -39,7 +39,7 @@
     <meta name="twitter:image" content="assets/images/logotype/horizontal_azul2@8x.png" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logotype/icon_1@8x.png" type="image/png">
+    <link rel="icon" href="/assets/images/logotype/icon_1@8x.png" type="image/png">
 
     <!-- Estilos y Fuentes -->
     <link href="../assets/css/base.css" rel="stylesheet" />

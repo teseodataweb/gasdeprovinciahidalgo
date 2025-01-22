@@ -33,7 +33,7 @@
     <meta name="twitter:image" content="assets/images/logotype/horizontal_azul2@8x.png" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logotype/icon_1@8x.png" type="image/png">
+    <link rel="icon" href="/assets/images/logotype/icon_1@8x.png" type="image/png">
 
     <!-- Estilos y Fuentes -->
     <link href="../assets/css/base.css" rel="stylesheet" />
@@ -205,7 +205,6 @@
                         color: #0b2d71;
                         display: inline-block;
                         flex: 0.4;
-                        text-transform: lowercase;
                         width: auto;
                     }
 
@@ -489,7 +488,7 @@
                                 </div>
                                 <div id="submit-container" class="submit-container">
                                     <div class="primary-link theme-bg-medium-blue">
-                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="submit" />
+                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar" />
                                     </div>
                                 </div>
                             </div>

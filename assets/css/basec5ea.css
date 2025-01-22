@@ -35780,7 +35780,7 @@ a:active {
 
 .x01 .text-col {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -35807,7 +35807,17 @@ a:active {
     overflow: hidden;
     width: 100%;
     position: relative;
+
 }
+.text-container .description ul {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+    justify-content: center; /* Centra verticalmente */
+
+  }
+  
 
 .x01 .slick-active .text-container .description {
     overflow: hidden;
@@ -44626,6 +44636,7 @@ a:active {
     position: relative;
     width: 100%;
     padding: 0px 10px 40px;
+    
 }
 
 .c74 .description-container .description>*:last-child {

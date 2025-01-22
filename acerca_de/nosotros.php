@@ -33,7 +33,7 @@
     <meta name="twitter:image" content="assets/images/logotype/horizontal_azul2@8x.png" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logotype/icon_1@8x.png" type="image/png">
+    <link rel="icon" href="/assets/images/logotype/icon_1@8x.png" type="image/png">
 
     <!-- Estilos y Fuentes -->
     <link href="../assets/css/base.css" rel="stylesheet" />
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <h1 class="type-display text-elevated text-window width-1200 centered text-center">Nosotros</h1>
                             </div>
                             <div class="description-container background-color-white">
-                                <div class="description type-body text-elevated width-600 centered text-center">
+                                <div class="description type-body text-elevated centered text-center">
                                     <h3>
                                         En Gas de Provincia S.A. de C.V., somos líderes en la venta y distribución de Gas L.P., comprometidos con la seguridad y satisfacción de nuestros clientes desde 2005 en Hidalgo, y con una historia que se remonta a 1947 en Toluca y Atlacomulco. Nos destacamos por nuestra calidad, servicio y honestidad, atendiendo tanto a hogares como a industrias y comercios.
                                     </h3>

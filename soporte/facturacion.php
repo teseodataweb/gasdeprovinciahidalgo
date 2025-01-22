@@ -33,7 +33,7 @@
     <meta name="twitter:image" content="assets/images/logotype/horizontal_azul2@8x.png" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logotype/icon_1@8x.png" type="image/png">
+    <link rel="icon" href="/assets/images/logotype/icon_1@8x.png" type="image/png">
 
     <!-- Estilos y Fuentes -->
     <link href="../assets/css/base.css" rel="stylesheet" />
@@ -143,7 +143,7 @@
                         Completa nuestro <span class="color-medium-yellow">formulario</span> para obtener tu <span class="color-medium-yellow">factura</span> de manera <span class="color-medium-yellow">rápida</span> y <span class="color-medium-yellow">sin complicaciones</span>.
                     </h1>
                     <h2 class="headline color-medium-blue">
-                        Asegúrate de tener a mano tu RFC y los detalles necesarios para el trámite.
+                        Asegúrate de tener a la mano tu RFC y los detalles necesarios para el trámite.
                     </h2>
                 </div>
 
@@ -212,7 +212,6 @@
                         color: #0b2d71;
                         display: inline-block;
                         flex: 0.4;
-                        text-transform: lowercase;
                         width: auto;
                     }
 
@@ -498,21 +497,25 @@
 
                                 </select>
                             </div>
+                            <div class="row">
+                                <label for="documentos">Subir documentos<span class="medium-red">*</span></label>
+                                <input type="file" id="documentos" name="documentos" accept=".pdf, .doc, .docx" required="" data-error-name="Documentos" />
+                            </div>
                             <div id="submit-row" class="row submit-row">
                                 <div class="recap-container">
                                     <div id="recapWidget" class="g-recaptcha" data-sitekey="6Le1KuEUAAAAAArRNTv3KLnIpIwZf0w8aiJTKO9n" data-callback="recapCallback"></div>
                                 </div>
                                 <div id="submit-container" class="submit-container">
                                     <div class="primary-link theme-bg-medium-blue">
-                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="submit" />
+                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar" />
                                     </div>
                                 </div>
                             </div>
 
                         </form>
                         <div class="contact-us-thanks">
-                            <h2 class="dark-blue">thank you</h2>
-                            <h3 class="dark-blue">your message has been sent</h3>
+                            <h2 class="dark-blue">Gracias</h2>
+                            <h3 class="dark-blue">Tu mensaje ha sido enviado</h3>
                         </div>
                     </div>
                 </div>
