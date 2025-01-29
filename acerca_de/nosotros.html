@@ -346,6 +346,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
             </div>
 
+            <div class="carousel-container">
+                <div class="carousel-wrap">
+                    <div class="carousel">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/bonafont.png" alt="Cliente 1">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/braza.png" alt="Cliente 2">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/camara.png" alt="Cliente 3">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/chairo.png" alt="Cliente 4">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/dhl.png" alt="Cliente 5">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/faske.png" alt="Cliente 6">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/hogar.png" alt="Cliente 7">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/interceramic.png" alt="Cliente 8">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/jose.png" alt="Cliente 1">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/judas.png" alt="Cliente 2">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/braza.png" alt="Cliente 3">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/morgan.png" alt="Cliente 4">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/panamericano.png" alt="Cliente 5">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/penafiel.png" alt="Cliente 6">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/pizza.png" alt="Cliente 7">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/poly rafia.png" alt="Cliente 8">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/red.png" alt="Cliente 1">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/soriana.png" alt="Cliente 2">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/walmart.png" alt="Cliente 3">
+                        <img src="/assets/images/pages/acerca_de/nosotros/clientes/ysd.png" alt="Cliente 4">
+                        </div>
+                </div>
+            </div>
+
         </main>
 
         <?php
@@ -355,10 +382,6 @@ document.addEventListener("DOMContentLoaded", function() {
     <script src="../assets/js/siteNavigationb9c1.js"></script>
 
     <script src="../assets/js/siteModulese688.js"></script>
-
-
-
-
 
 
     <style>
@@ -389,7 +412,54 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     </style>
-
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f8f8;
+            }
+    
+            .carousel-container {
+                overflow: hidden;
+                white-space: nowrap;
+                width: 100%;
+                background-color: white;
+                padding: 20px 0;
+            }
+    
+            .carousel-container .carousel {
+                display: flex;
+                animation: scroll 15s linear infinite;
+            }
+    
+            .carousel img {
+                max-width: 200px;
+                height: auto;
+                width: 100%;
+                margin: 0 20px;
+            }
+    
+            @keyframes scroll {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+    
+            /* Duplicamos los logos para hacer el efecto infinito */
+            .carousel-wrap {
+                display: flex;
+                white-space: nowrap;
+            }
+    
+        </style>
 
     <!-- s: 005MB @ 9/9/2024 7:54:40 PM UTC -->
 
