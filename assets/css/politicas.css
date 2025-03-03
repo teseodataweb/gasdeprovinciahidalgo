@@ -1,0 +1,18 @@
+.button {
+    display: inline-block;
+    background-color: #FFC72C; /* Color de fondo amarillo */
+    color: #00408B; /* Color de la fuente */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* O cualquier otra tipografía deseada */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #FFD54F; /* Un tono más claro de amarillo al pasar el mouse */
+    color: #002F5D; /* Un azul más oscuro */
+}
