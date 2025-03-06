@@ -107,12 +107,12 @@
                                     <li class="splide__slide background-color-dark-blue">
                                         <style type="text/css">
                                             #mod_ad61d255 {
-                                                background-image: url('./assets/images/pages/index/_01_Conjunto/1.webp');
+                                                background-image: url('./assets/images/pages/index/_01_Conjunto/IMG_7946.webp');
                                             }
 
                                             @media screen and (min-width: 768px) {
                                                 #mod_ad61d255 {
-                                                    background-image: url('./assets/images/pages/index/_01_Conjunto/1.webp');
+                                                    background-image: url('./assets/images/pages/index/_01_Conjunto/IMG_7946.webp');
                                                 }
                                             }
                                         </style>
@@ -327,14 +327,10 @@
                             </div>
                             <div class="text-container centered">
                                 <div class="description type-subhead text-super width-1200">
-                                    <p>Tenemos <b><span class="colorAmarilloClaro">PRESENCIA</span></b> en...
+                                    <p>Cerca <b><span class="colorAmarilloClaro">de ti</span></b> en...
                                         <span class="text-opacity">
                                             <br>
                                             <span class="colorAmarilloClaro">Hidalgo</span>.
-                                            <br>
-                                            <span class="colorAmarilloClaro">Toluca</span>.
-                                            <br>
-                                            <span class="colorAmarilloClaro">Atlacomulco</span>.
                                         </span>
                                     </p>
                                 </div>

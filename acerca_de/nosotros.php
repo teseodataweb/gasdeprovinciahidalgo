@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             </div>
 
-            <div class="carousel-container">
+            <!-- <div class="carousel-container">
                 <div class="carousel-wrap">
                     <div class="carousel">
                         <img src="/assets/images/pages/acerca_de/nosotros/clientes/bonafont.png" alt="Cliente 1">
@@ -371,7 +371,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <img src="/assets/images/pages/acerca_de/nosotros/clientes/ysd.png" alt="Cliente 4">
                         </div>
                 </div>
-            </div>
+            </div> -->
 
         </main>
 
