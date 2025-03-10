@@ -418,101 +418,82 @@
 
                 <div class="general-filter contact-us-container container-fluid">
                     <div class="content-basics inner-container centered width-800">
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post" class="contact-us" id="commentform">
-                            <input type="hidden" name='captcha_settings' value='{"keyname":"ccc_Contactus","fallback":"true","orgId":"00D3000000017zq","ts":""}' />
-                            <input type="hidden" name="orgid" value="00D3000000017zq" />
-                            <input type="hidden" name="retURL" value="https://www.chevron.com/about/contact/email-chevron" />
-                            <input type="hidden" id="recordType" name="recordType" value="0123000000092zI" />
-                            <input type="hidden" id="00N5Y00000Qdv0E" name="00N5Y00000Qdv0E" value="Inquiry" />
-                            <input type="hidden" id="debug" name="debug" value="0" />
-                            <input type="hidden" id="debugEmail" name="debugEmail" value="kkamoji@chevron.com" />
-                            <input type="hidden" id="origin" name="origin" value="Chevron.com" />
-                            <input type="hidden" id="external" name="external" value="1" />
-                            <input type="hidden" id="email" name="email" value="" />
+                    <form action="pedirfacturacion.php" method="post" class="contact-us" id="facturacionform" enctype="multipart/form-data">
+                        <div class="row">
+                            <label for="nombre">Nombre del cliente<span class="medium-red">*</span></label>
+                            <input type="text" id="nombre" name="nombre" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" required>
+                        </div>
 
-                            <div class="row dropdown">
-                                <label for="00N5Y00000Qdv0q">Seleccione un municipio<span class="medium-red">*</span></label>
-                                <select id="00N5Y00000Qdv0q" name="00N5Y00000Qdv0q" class="contact-dropdown dropdown-button truncate-container medium-blue topic" required="" data-error-name="Municipoio">
+                        <div class="row">
+                            <label for="telefono">Teléfono<span class="medium-red">*</span></label>
+                            <input type="tel" id="telefono" name="telefono" title="Por favor, ingresa tu número telefónico." autocomplete="tel" pattern="[0-9]{10}" maxlength="10" required>
+                        </div>
 
-                                    <option value="" />Selecciona uno
-                                    <option value="Products" data-topic="products" />Pachuca
-                                    <option value="Products" data-topic="products" />El arenal
-                                    <option value="Products" data-topic="products" />Real del Monte
-                                    <option value="Products" data-topic="products" />Ixmiquilpan
-                                    <option value="Products" data-topic="products" />Acelotla
-                                    <option value="Products" data-topic="products" />Tulancingo
-                                    <option value="Products" data-topic="products" />Apan
-                                    <option value="Products" data-topic="products" />Zacualtipán de Ángeles
+                        <div class="row">
+                            <label for="correo">Correo electrónico<span class="medium-red">*</span></label>
+                            <input type="email" id="correo" name="correo" title="Por favor, ingresa tu correo electrónico." autocomplete="email" required>
+                        </div>
 
-                                </select>
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Nombre del cliente<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pbC">Teléfono<span class="medium-red">*</span></label><input type="number" id="00N300000015pbC" name="00N300000015pbC" title="Por favor, ingresa tu numero telefonico." autocomplete="family-name" value="" minlength="1" maxlength="10" aria-required="true" required="" data-error-name="Phone" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pY9">Correo electronico<span class="medium-red">*</span></label><input type="email" id="00N300000015pY9" name="00N300000015pY9" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="Por favor, ingresa tu email." autocomplete="email" value="" aria-required="true" required="" data-error-name="Email" />
-                            </div>
-                            <div class="row media-relations hide-flex">
-                                <label for="00N300000015pcU">Phone</label><input type="text" id="00N300000015pcU" name="00N300000015pcU" title="Please enter a valid phone number." value="" maxlength="25" /><!--placeholder="123456789012345" minlength="10" maxlength="20" aria-required="true" required=""-->
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Domicilio<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa tu domicilio." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Razón Social<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa la razón social." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">RFC<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa la razón social." autocomplete="given-name" value="" minlength="1" maxlength="13" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row dropdown">
-                                <label for="00N5Y00000Qdv0q">Forma de pago<span class="medium-red">*</span></label>
-                                <select id="00N5Y00000Qdv0q" name="00N5Y00000Qdv0q" class="contact-dropdown dropdown-button truncate-container medium-blue topic" required="" data-error-name="Forma de pago">
+                        <div class="row">
+                            <label for="direccion">Domicilio<span class="medium-red">*</span></label>
+                            <input type="text" id="direccion" name="direccion" title="Por favor, ingresa tu domicilio." required>
+                        </div>
 
-                                    <option value="" />Selecciona uno
-                                    <option value="Products" data-topic="products" />Efectivo
-                                    <option value="Products" data-topic="products" />Cheque nominativo
-                                    <option value="Products" data-topic="products" />Transferencia electrónica de fondos
-                                    <option value="Products" data-topic="products" />Tarjeta de crédito
-                                    <option value="Products" data-topic="products" />Monedero electrónico
-                                    <option value="Products" data-topic="products" />Dinero electrónico
-                                    <option value="Products" data-topic="products" />Vales de despensa
-                                    <option value="Products" data-topic="products" />Tarjeta de debito
-                                    <option value="Products" data-topic="products" />Tarjeta de servicio
+                        <div class="row">
+                            <label for="razon_social">Razón Social<span class="medium-red">*</span></label>
+                            <input type="text" id="razon_social" name="razon_social" title="Por favor, ingresa la razón social." required>
+                        </div>
 
-                                </select>
-                            </div>
-                            <div class="row dropdown">
-                                <label for="00N5Y00000Qdv0q">Uso de CFDI<span class="medium-red">*</span></label>
-                                <select id="00N5Y00000Qdv0q" name="00N5Y00000Qdv0q" class="contact-dropdown dropdown-button truncate-container medium-blue topic" required="" data-error-name="Forma de pago">
+                        <div class="row">
+                            <label for="rfc">RFC<span class="medium-red">*</span></label>
+                            <input type="text" id="rfc" name="rfc" title="Por favor, ingresa tu RFC." maxlength="13" required>
+                        </div>
 
-                                    <option value="" />Selecciona uno
-                                    <option value="Products" data-topic="products" />Adquisicion de mercancias
-                                    <option value="Products" data-topic="products" />Devoluciones, Descuentos y Bonificación
-                                    <option value="Products" data-topic="products" />Gastos generales
-                                    <option value="Products" data-topic="products" />Construcciones
-                                    <option value="Products" data-topic="products" />Equipo de transporte
+                        <div class="row">
+                            <label for="forma_pago">Forma de pago<span class="medium-red">*</span></label>
+                            <select id="forma_pago" name="forma_pago" required>
+                                <option value="">Selecciona uno</option>
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Cheque nominativo">Cheque nominativo</option>
+                                <option value="Transferencia electrónica">Transferencia electrónica</option>
+                                <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                                <option value="Monedero electrónico">Monedero electrónico</option>
+                                <option value="Dinero electrónico">Dinero electrónico</option>
+                                <option value="Vales de despensa">Vales de despensa</option>
+                                <option value="Tarjeta de débito">Tarjeta de débito</option>
+                                <option value="Tarjeta de servicio">Tarjeta de servicio</option>
+                            </select>
+                        </div>
 
-                                </select>
+                        <div class="row">
+                            <label for="uso_cfdi">Uso de CFDI<span class="medium-red">*</span></label>
+                            <select id="uso_cfdi" name="uso_cfdi" required>
+                                <option value="">Selecciona uno</option>
+                                <option value="Adquisición de mercancías">Adquisición de mercancías</option>
+                                <option value="Devoluciones, Descuentos y Bonificación">Devoluciones, Descuentos y Bonificación</option>
+                                <option value="Gastos generales">Gastos generales</option>
+                                <option value="Construcciones">Construcciones</option>
+                                <option value="Equipo de transporte">Equipo de transporte</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label for="documentos">Subir documentos (PDF, DOC, DOCX)<span class="medium-red">*</span></label>
+                            <input type="file" id="documentos" name="documentos" accept=".pdf, .doc, .docx" required>
+                        </div>
+
+                        <div id="submit-row" class="row submit-row">
+                            <div class="recap-container">
+                                <div id="recapWidget" class="g-recaptcha" data-sitekey="TU_SITE_KEY" data-callback="recapCallback"></div>
                             </div>
-                            <div class="row">
-                                <label for="documentos">Subir documentos<span class="medium-red">*</span></label>
-                                <input type="file" id="documentos" name="documentos" accept=".pdf, .doc, .docx" required="" data-error-name="Documentos" />
-                            </div>
-                            <div id="submit-row" class="row submit-row">
-                                <div class="recap-container">
-                                    <div id="recapWidget" class="g-recaptcha" data-sitekey="6Le1KuEUAAAAAArRNTv3KLnIpIwZf0w8aiJTKO9n" data-callback="recapCallback"></div>
-                                </div>
-                                <div id="submit-container" class="submit-container">
-                                    <div class="primary-link theme-bg-medium-blue">
-                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar" />
-                                    </div>
+                            <div id="submit-container" class="submit-container">
+                                <div class="primary-link theme-bg-medium-blue">
+                                    <input type="submit" name="submit" id="facturacion-submit" class="link theme-bg-color" value="Enviar Facturación">
                                 </div>
                             </div>
+                        </div>
+                    </form>
 
-                        </form>
                         <div class="contact-us-thanks">
                             <h2 class="dark-blue">Gracias</h2>
                             <h3 class="dark-blue">Tu mensaje ha sido enviado</h3>

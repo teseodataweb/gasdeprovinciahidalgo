@@ -89,7 +89,7 @@
             <link rel="stylesheet" href="./assets/css/colores.css">
             <link rel="stylesheet" href="./assets/css/whatsapp.css">
             <link rel="stylesheet" href="./assets/css/gas.css">
-            <a href="https://wa.me/7717112599" target="_blank" class="whatsapp-button">
+            <a href="https://wa.me/7717112599?text=Vi la página web y quiero hacer un pedido ..." target="_blank" class="whatsapp-button">
                 <img src="/assets/images/icons/redes_sosciales/whatsapp.webp" alt="WhatsApp" />
             </a>
         </div>
@@ -191,7 +191,7 @@
                                                         Brindando servicio de calidad y seguridad desde 2005
                                                     </h3>
                                                 </div>
-                                                <a href="https://wa.me/7717112599" target="_blank" class="cta-link type-cta text-base "> <span class="cta-glyphicon">
+                                                <a href="https://wa.me/7717112599?text=Vi la página web y quiero hacer un pedido ..." target="_blank" class="cta-link type-cta text-base "> <span class="cta-glyphicon">
                                                         <span class="animate glyphicon glyphicon-2023-arrow-right" aria-hidden="true"></span>
                                                     </span>
                                                     <span class="cta-underline cta-link">

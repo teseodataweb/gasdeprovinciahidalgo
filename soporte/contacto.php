@@ -560,47 +560,39 @@
 
                 <div class="general-filter contact-us-container container-fluid">
                     <div class="content-basics inner-container centered width-800">
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post" class="contact-us" id="commentform">
-                            <input type="hidden" name='captcha_settings' value='{"keyname":"ccc_Contactus","fallback":"true","orgId":"00D3000000017zq","ts":""}' />
-                            <input type="hidden" name="orgid" value="00D3000000017zq" />
-                            <input type="hidden" name="retURL" value="https://www.chevron.com/about/contact/email-chevron" />
-                            <input type="hidden" id="recordType" name="recordType" value="0123000000092zI" />
-                            <input type="hidden" id="00N5Y00000Qdv0E" name="00N5Y00000Qdv0E" value="Inquiry" />
-                            <input type="hidden" id="debug" name="debug" value="0" />
-                            <input type="hidden" id="debugEmail" name="debugEmail" value="kkamoji@chevron.com" />
-                            <input type="hidden" id="origin" name="origin" value="Chevron.com" />
-                            <input type="hidden" id="external" name="external" value="1" />
-                            <input type="hidden" id="email" name="email" value="" />
+                        <form action="enviar.php" method="post" class="contact-us" id="commentform">
                             <div class="row">
-                                <label for="00N300000015pb2">Nombre del cliente<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
+                                <label for="nombre">Nombre del cliente<span class="medium-red">*</span></label>
+                                <input type="text" id="nombre" name="nombre" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" required>
                             </div>
+                        
                             <div class="row">
-                                <label for="00N300000015pbC">Teléfono<span class="medium-red">*</span></label><input type="number" id="00N300000015pbC" name="00N300000015pbC" title="Por favor, ingresa tu numero telefonico." autocomplete="family-name" value="" minlength="1" maxlength="10" aria-required="true" required="" data-error-name="Phone" />
+                                <label for="telefono">Teléfono<span class="medium-red">*</span></label>
+                                <input type="tel" id="telefono" name="telefono" title="Por favor, ingresa tu número telefónico." autocomplete="tel" pattern="[0-9]{10}" maxlength="10" required>
                             </div>
+                        
                             <div class="row">
-                                <label for="00N300000015pY9">Correo electronico<span class="medium-red">*</span></label><input type="email" id="00N300000015pY9" name="00N300000015pY9" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="Por favor, ingresa tu email." autocomplete="email" value="" aria-required="true" required="" data-error-name="Email" />
+                                <label for="correo">Correo electrónico<span class="medium-red">*</span></label>
+                                <input type="email" id="correo" name="correo" title="Por favor, ingresa tu correo electrónico." autocomplete="email" required>
                             </div>
-                            <div class="row media-relations hide-flex">
-                                <label for="00N300000015pcU">Phone</label><input type="text" id="00N300000015pcU" name="00N300000015pcU" title="Please enter a valid phone number." value="" maxlength="25" /><!--placeholder="123456789012345" minlength="10" maxlength="20" aria-required="true" required=""-->
-                            </div>
-                            <div class="row media-relations hide-flex">
-                                <label for="00N5Y00000Qdv0x">Media Affiliation</label><input type="text" id="00N5Y00000Qdv0x" name="00N5Y00000Qdv0x" value="" />
-                            </div>
+                        
                             <div class="row comments">
-                                <label for="description">Descripcion<span class="medium-red">*</span></label>
-                                <div class="comments-length text-normal body-3 dark-gray">(<span class="comments-length-value" aria-hidden="true">0</span><span class="comments-length-value sr-only" aria-live="polite">0</span>/1000)</div><textarea id="description" name="description" rows="5" minlength="1" maxlength="1000" aria-required="true" required="" data-error-name="Description"></textarea>
+                                <label for="mensaje">Descripción<span class="medium-red">*</span></label>
+                                <textarea id="mensaje" name="mensaje" rows="5" maxlength="1000" required></textarea>
                             </div>
+                        
                             <div id="submit-row" class="row submit-row">
                                 <div class="recap-container">
-                                    <div id="recapWidget" class="g-recaptcha" data-sitekey="6Le1KuEUAAAAAArRNTv3KLnIpIwZf0w8aiJTKO9n" data-callback="recapCallback"></div>
+                                    <div id="recapWidget" class="g-recaptcha" data-sitekey="TU_SITE_KEY" data-callback="recapCallback"></div>
                                 </div>
                                 <div id="submit-container" class="submit-container">
                                     <div class="primary-link theme-bg-medium-blue">
-                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar" />
+                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar">
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        
                         <div class="contact-us-thanks">
                             <h2 class="dark-blue">thank you</h2>
                             <h3 class="dark-blue">your message has been sent</h3>

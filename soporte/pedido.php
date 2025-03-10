@@ -411,89 +411,59 @@
 
                 <div class="general-filter contact-us-container container-fluid">
                     <div class="content-basics inner-container centered width-800">
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post" class="contact-us" id="commentform">
-                            <input type="hidden" name='captcha_settings' value='{"keyname":"ccc_Contactus","fallback":"true","orgId":"00D3000000017zq","ts":""}' />
-                            <input type="hidden" name="orgid" value="00D3000000017zq" />
-                            <input type="hidden" name="retURL" value="https://www.chevron.com/about/contact/email-chevron" />
-                            <input type="hidden" id="recordType" name="recordType" value="0123000000092zI" />
-                            <input type="hidden" id="00N5Y00000Qdv0E" name="00N5Y00000Qdv0E" value="Inquiry" />
-                            <input type="hidden" id="debug" name="debug" value="0" />
-                            <input type="hidden" id="debugEmail" name="debugEmail" value="kkamoji@chevron.com" />
-                            <input type="hidden" id="origin" name="origin" value="Chevron.com" />
-                            <input type="hidden" id="external" name="external" value="1" />
-                            <input type="hidden" id="email" name="email" value="" />
-
-                            <div class="row dropdown">
-                                <label for="00N5Y00000Qdv0q">Seleccione un municipio<span class="medium-red">*</span></label>
-                                <select id="00N5Y00000Qdv0q" name="00N5Y00000Qdv0q" class="contact-dropdown dropdown-button truncate-container medium-blue topic" required="" data-error-name="Municipoio">
-
-                                    <option value="" />Selecciona uno
-                                    <option value="Products" data-topic="products" />Pachuca
-                                    <option value="Products" data-topic="products" />El arenal
-                                    <option value="Products" data-topic="products" />Real del Monte
-                                    <option value="Products" data-topic="products" />Ixmiquilpan
-                                    <option value="Products" data-topic="products" />Acelotla
-                                    <option value="Products" data-topic="products" />Tulancingo
-                                    <option value="Products" data-topic="products" />Apan
-                                    <option value="Products" data-topic="products" />Zacualtipán de Ángeles
-
+                        <form action="enviarpedido.php" method="POST" style="width: 100%;">
+            
+                            <label for="nombre" style="width: 100%;">Nombre del cliente<span>*</span></label>
+                            <input type="text" id="nombre" name="nombre" required style="width: 100%;">
+                
+                            <label for="telefono" style="width: 100%;">Teléfono<span>*</span></label>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10" placeholder="10 dígitos" required style="width: 100%;">
+                
+                            <label for="correo" style="width: 100%;">Correo electrónico<span>*</span></label>
+                            <input type="email" id="correo" name="correo" required style="width: 100%;">
+                
+                            <label for="direccion" style="width: 100%;">Domicilio<span>*</span></label>
+                            <input type="text" id="direccion" name="direccion" required style="width: 100%;">
+                
+                            <label style="width: 100;">Tipo de Servicio<span>*</span></label>
+                            <div style="width: 100%;">
+                                <input type="radio" id="estacionario" name="servicio" value="estacionario" onclick="mostrarCampos()" required>
+                                <label for="estacionario" style="width: 100%;">Estacionario</label>
+                
+                                <input type="radio" id="cilindro" name="servicio" value="cilindro" onclick="mostrarCampos()" required>
+                                <label for="cilindro" style="width: 100%;">Cilindro</label>
+                            </div>
+                
+                            <!-- Campo para litros (solo estacionario) -->
+                            <div id="campoLitros" style="display: none; width: 100%;">
+                                <label for="litros" style="width: 100%;">Cantidad en litros (máx. 1000)<span>*</span></label>
+                                <input type="number" id="litros" name="litros" min="1" max="1000" placeholder="Ingrese litros" style="width: 100%;">
+                            </div>
+                
+                            <!-- Opciones para cilindros -->
+                            <div id="campoCilindros" style="display: none; width: 100%;">
+                                <label style="width: 100%;">Cantidad de Cilindros<span>*</span></label>
+                                <select id="cilindros" name="cilindros" style="width: 100%;">
+                                    <option value="">Seleccione</option>
+                                    <option value="20kg">20 kg</option>
+                                    <option value="30kg">30 kg</option>
                                 </select>
                             </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Nombre del cliente<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pbC">Teléfono<span class="medium-red">*</span></label><input type="number" id="00N300000015pbC" name="00N300000015pbC" title="Por favor, ingresa tu numero telefonico." autocomplete="family-name" value="" minlength="1" maxlength="10" aria-required="true" required="" data-error-name="Phone" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pY9">Correo electronico<span class="medium-red">*</span></label><input type="email" id="00N300000015pY9" name="00N300000015pY9" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="Por favor, ingresa tu email." autocomplete="email" value="" aria-required="true" required="" data-error-name="Email" />
-                            </div>
-                            <div class="row media-relations hide-flex">
-                                <label for="00N300000015pcU">Phone</label><input type="text" id="00N300000015pcU" name="00N300000015pcU" title="Please enter a valid phone number." value="" maxlength="25" /><!--placeholder="123456789012345" minlength="10" maxlength="20" aria-required="true" required=""-->
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Domicilio<span class="medium-red">*</span></label><input type="text" id="00N300000015pb2" name="00N300000015pb2" title="Por favor, ingresa tu domicilio." autocomplete="given-name" value="" minlength="1" aria-required="true" required="" data-error-name="First Name" />
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Tipo de servicio<span class="medium-red">*</span></label>
-                                <label></label>
-                                <label>
-                                    Estacionario
-                                    <input type="radio" name="servicio" value="estacionario" checked>
-                                </label>
-                                <label>
-                                    Cilindro
-                                    <input type="radio" name="servicio" value="cilindro">
-                                </label>
-                                <label>
-                                    <input type="number">
-                                </label>
-                            </div>
-                            <div class="row">
-                                <label for="00N300000015pb2">Cilindro<span class="medium-red">*</span></label>
-                                <label></label>
-                                <label>
-                                    20 Litros
-                                    <input type="radio" name="cilindro" value="estacionario" checked>
-                                </label>
-                                <label>
-                                    30 Litros
-                                    <input type="radio" name="cilindro" value="estacionario" checked>
-                                </label>
-                                <label></label>
-                            </div>
-                            <div id="submit-row" class="row submit-row">
-                                <div class="recap-container">
-                                    <div id="recapWidget" class="g-recaptcha" data-sitekey="6Le1KuEUAAAAAArRNTv3KLnIpIwZf0w8aiJTKO9n" data-callback="recapCallback"></div>
-                                </div>
-                                <div id="submit-container" class="submit-container">
-                                    <div class="primary-link theme-bg-medium-blue">
-                                        <input type="submit" name="submit" id="contact-submit" class="link theme-bg-color" value="Enviar" />
-                                    </div>
-                                </div>
-                            </div>
+                
+                            <button type="submit" class="submit-button" style="background-color: #0066B2; color: white; padding: 0 20px;">Enviar Pedido</button>
+                    </form>
+                    </div>
+                
+                    <script>
+                        function mostrarCampos() {
+                            const estacionario = document.getElementById("estacionario").checked;
+                            const cilindro = document.getElementById("cilindro").checked;
+                
+                            document.getElementById("campoLitros").style.display = estacionario ? "block" : "none";
+                            document.getElementById("campoCilindros").style.display = cilindro ? "block" : "none";
+                        }
+                    </script>
 
-                        </form>
                         <div class="contact-us-thanks">
                             <h2 class="dark-blue">thank you</h2>
                             <h3 class="dark-blue">your message has been sent</h3>
