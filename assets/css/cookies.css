@@ -1,0 +1,32 @@
+#cookieBanner { 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  /* Mueve el banner a la esquina inferior derecha */
+    left: auto;  /* Asegura que no esté centrado */
+    transform: none;  /* Elimina la transformación de centrado */
+    background-color: #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Reduce el ancho para que se vea más compacto */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+#cookieBanner button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Hace que los botones ocupen todo el ancho */
+}
+#acceptCookies {
+    background-color: #003366;
+    color: white;
+}
+#customizeCookies, #savePreferences {
+    background-color: #ccc;
+}
+.hidden { display: none; }
+.cookie-options { text-align: left; margin-top: 10px; }

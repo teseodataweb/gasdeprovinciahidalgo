@@ -1,3 +1,7 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
             <div class="row">
@@ -17,5 +21,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="/assets/js/site.min.js" defer></script>
+    <!-- Código de Cookies -->
+    <?php include 'html/cookies.php'; ?>
 </body>
 </html>

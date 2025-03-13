@@ -225,29 +225,31 @@
                                                     </div>
                                                 </a>
                                                 
-                                                <a class="splide__slide cta-link-parent" href="mailto:info@gasdeprovincia.com">
-                                                    <div class="inner-slide-wrapper fondoAzulOscuro">
-                                                        <div class="opacity-cover"></div>
-                                                        <div class="image-container">
-                                                            <img class="img-fluid" src="../assets/images/pages/soporte/contacto/contactos/woman-holding-google-plus-icon.png" alt="" />
-                                                        </div>
-                                                        <div class="content-container text-left">
-                                                            <p class="type-subhead text-reduced slide-header color-light-yellow">
-                                                                Correo Electrónico
-                                                            </p>
-                                                            <h4 class="type-subhead text-reduced slide-header color-light-yellow">
-                                                             </h4>
-                                                            <p class="cta-container">
-                                                                <span class="cta-link type-cta text-base">
-                                                                    <span class="cta-glyphicon">
-                                                                        <span class="animate glyphicon glyphicon-2023-arrow-right white" aria-hidden="true"></span>
+                                                <a class="splide__slide cta-link-parent" 
+                                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pachuca.atencion@gasdeprovincia.com.mx&su=Solicitud%20de%20Suministro%20de%20Gas%20LP&body=Estimados,%0D%0A%0D%0AEspero%20se%20encuentren%20bien.%20Me%20dirijo%20a%20ustedes%20para%20solicitar%20el%20suministro%20de%20Gas%20LP%20para%20[indicar%20la%20dirección%20completa%20o%20el%20nombre%20de%20la%20colonia%20y/o%20ciudad%20donde%20se%20necesita%20el%20gas].%0D%0A%0D%0AAgradecería%20si%20pudieran%20informarme%20sobre%20disponibilidad%20y%20el%20tiempo%20aproximado%20de%20entrega.%0D%0A%0D%0AQuedo%20atento(a)%20a%20su%20pronta%20respuesta.%0D%0A%0D%0ASaludos%20cordiales,%0D%0A%5BTu%20nombre%5D%0D%0A%5BTu%20número%20de%20teléfono%5D%0D%0A%5BTu%20dirección%20de%20correo%20electrónico%5D">
+                                                        <div class="inner-slide-wrapper fondoAzulOscuro">
+                                                            <div class="opacity-cover"></div>
+                                                            <div class="image-container">
+                                                                <img class="img-fluid" src="../assets/images/pages/soporte/contacto/contactos/woman-holding-google-plus-icon.png" alt="" />
+                                                            </div>
+                                                            <div class="content-container text-left">
+                                                                <p class="type-subhead text-reduced slide-header color-light-yellow">
+                                                                    Correo Electrónico
+                                                                </p>
+                                                                <h4 class="type-subhead text-reduced slide-header color-light-yellow">
+                                                                </h4>
+                                                                <p class="cta-container">
+                                                                    <span class="cta-link type-cta text-base">
+                                                                        <span class="cta-glyphicon">
+                                                                            <span class="animate glyphicon glyphicon-2023-arrow-right white" aria-hidden="true"></span>
+                                                                        </span>
+                                                                        <span class="cta-underline white">Saber más</span>
                                                                     </span>
-                                                                    <span class="cta-underline white">Saber más</span>
-                                                                </span>
-                                                            </p>
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </a>
+
 
                                             </div>
                                         </div>

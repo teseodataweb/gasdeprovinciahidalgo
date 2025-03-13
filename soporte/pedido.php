@@ -436,9 +436,28 @@
                 
                             <!-- Campo para litros (solo estacionario) -->
                             <div id="campoLitros" style="display: none; width: 100%;">
-                                <label for="litros" style="width: 100%;">Cantidad en litros (máx. 1000)<span>*</span></label>
-                                <input type="number" id="litros" name="litros" min="1" max="1000" placeholder="Ingrese litros" style="width: 100%;">
+                                <label for="litros" style="width: 100%;">Cantidad en litros<span>*</span></label>
+                                <input type="number" id="litros" name="litros" min="1" max="1000" maxlength="4" placeholder="Ingrese litros" style="width: 100%;" oninput="validarLitros()">
                             </div>
+
+                            <script>
+                            function validarLitros() {
+                                let input = document.getElementById("litros");
+
+                                // Limitar la cantidad de dígitos a 4
+                                if (input.value.length > 4) {
+                                    input.value = input.value.slice(0, 4);
+                                }
+
+                                // Si el número ingresado es mayor a 1000, mostrar alerta y corregir valor
+                                if (parseInt(input.value) > 1000) {
+                                    alert("La cantidad máxima permitida es 1000 litros.");
+                                    input.value = 1000;
+                                }
+                            }
+                            </script>
+
+
                 
                             <!-- Opciones para cilindros -->
                             <div id="campoCilindros" style="display: none; width: 100%;">

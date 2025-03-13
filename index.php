@@ -1299,6 +1299,8 @@ document.querySelectorAll('.service-request-button').forEach(button => {
 });
 
 </script>
+<?php include 'assets/html/cookies.php'; ?>
+
 </body>
 
 </html>
