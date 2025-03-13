@@ -106,6 +106,7 @@
 
     gtag('config', 'G-QPB9M32VTF');
     </script>
+<?php include 'assets/html/cookies.php'; ?>
 
 </body>
 

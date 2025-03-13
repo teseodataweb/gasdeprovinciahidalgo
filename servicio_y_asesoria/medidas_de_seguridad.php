@@ -507,6 +507,7 @@ document.querySelectorAll("[data-section]").forEach(function(section) {
 
 
     <!-- s: 005MB @ 9/9/2024 7:54:24 PM UTC -->
+    <?php include 'assets/html/cookies.php'; ?>
 
 </body>
 

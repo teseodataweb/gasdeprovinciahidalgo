@@ -862,6 +862,7 @@
 
         </script>
     <!-- s: 005MB @ 9/9/2024 7:57:41 PM UTC -->
+    <?php include 'assets/html/cookies.php'; ?>
 
 </body>
 
