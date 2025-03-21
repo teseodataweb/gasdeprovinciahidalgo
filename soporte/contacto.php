@@ -570,8 +570,19 @@
                         
                             <div class="row">
                                 <label for="telefono">Teléfono<span class="medium-red">*</span></label>
-                                <input type="tel" id="telefono" name="telefono" title="Por favor, ingresa tu número telefónico." autocomplete="tel" pattern="[0-9]{10}" maxlength="10" required>
+                                <input 
+                                    type="text" 
+                                    id="telefono" 
+                                    name="telefono" 
+                                    title="Por favor, ingresa tu número telefónico." 
+                                    autocomplete="tel" 
+                                    inputmode="numeric" 
+                                    pattern="[0-9]{10}" 
+                                    maxlength="10" 
+                                    required 
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                             </div>
+
                         
                             <div class="row">
                                 <label for="correo">Correo electrónico<span class="medium-red">*</span></label>

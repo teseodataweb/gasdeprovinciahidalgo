@@ -423,11 +423,22 @@
                             <label for="nombre">Nombre del cliente<span class="medium-red">*</span></label>
                             <input type="text" id="nombre" name="nombre" title="Por favor, ingresa tu nombre completo." autocomplete="given-name" required>
                         </div>
-
                         <div class="row">
                             <label for="telefono">Teléfono<span class="medium-red">*</span></label>
-                            <input type="tel" id="telefono" name="telefono" title="Por favor, ingresa tu número telefónico." autocomplete="tel" pattern="[0-9]{10}" maxlength="10" required>
+                            <input 
+                                type="text" 
+                                id="telefono" 
+                                name="telefono" 
+                                title="Por favor, ingresa tu número telefónico." 
+                                inputmode="numeric" 
+                                pattern="[0-9]{10}" 
+                                maxlength="10" 
+                                required
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                                autocomplete="tel"
+                            >
                         </div>
+
 
                         <div class="row">
                             <label for="correo">Correo electrónico<span class="medium-red">*</span></label>

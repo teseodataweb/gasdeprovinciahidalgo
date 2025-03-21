@@ -315,10 +315,10 @@
                             <div class="images-container">
 
                                 <div class="first-image image">
-                                    <img alt="" src="./assets/images/pages/index/_02_Conjunto/IMG_9344.JPG" class="img-fluid" />
+                                    <img alt="" src="./assets/images/pages/index/_02_Conjunto/IMG_9344.JPG" class="img-fluid" style="width: 60%; height: auto;" />
                                 </div>
                                 <div class="second-image image">
-                                    <img alt="" src="./assets/images/pages/index/_02_Conjunto/IMG_9373.JPG" class="img-fluid" />
+                                    <img alt="" src="./assets/images/pages/index/_02_Conjunto/IMG_9373.JPG" class="img-fluid" style="width: 40%; height: auto;" />
                                 </div>
                                 <div class="third-image image">
                                     <img alt="" src="./assets/images/pages/index/_02_Conjunto/IMG_9447 (1).JPG" class="img-fluid" />

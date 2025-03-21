@@ -417,7 +417,17 @@
                             <input type="text" id="nombre" name="nombre" required style="width: 100%;">
                 
                             <label for="telefono" style="width: 100%;">Teléfono<span>*</span></label>
-                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10" placeholder="10 dígitos" required style="width: 100%;">
+                            <input 
+                                type="text" 
+                                id="telefono" 
+                                name="telefono" 
+                                inputmode="numeric" 
+                                pattern="[0-9]{10}" 
+                                maxlength="10" 
+                                placeholder="10 dígitos" 
+                                required 
+                                style="width: 100%;" 
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 
                             <label for="correo" style="width: 100%;">Correo electrónico<span>*</span></label>
                             <input type="email" id="correo" name="correo" required style="width: 100%;">
